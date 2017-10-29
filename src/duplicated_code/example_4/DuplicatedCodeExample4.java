@@ -1,21 +1,20 @@
-package duplicated_code.example_1;
+package duplicated_code.example_4;
 
 import duplicated_code.EngineerNotFoundException;
 
 import java.util.Map;
 
-class DuplicatedCodeExample1 {
+class DuplicatedCodeExample4 {
 
     private static final String COMPUTER_ENGINEER = "Computer";
     private static final String CIVIL_ENGINEER = "Civil";
     private final Map<String, String> engineerList;
 
-    DuplicatedCodeExample1(Map<String, String> engineerList) {
+    DuplicatedCodeExample4(Map<String, String> engineerList) {
         this.engineerList = engineerList;
     }
 
     String findComputerEngineer() {
-
         for (Map.Entry<String, String> entry : engineerList.entrySet()) {
             if (entry.getKey().equals(COMPUTER_ENGINEER)) {
                 return entry.getValue();
@@ -25,11 +24,12 @@ class DuplicatedCodeExample1 {
     }
 
     String findCivilEngineer() {
-        for (Map.Entry<String, String> entry : engineerList.entrySet()) {
-            if (entry.getKey().equals(CIVIL_ENGINEER)) {
-                return entry.getValue();
-            }
+        String name = engineerList.get(CIVIL_ENGINEER);
+        if (!"".equals(name) && name != null) {
+            return name;
         }
         throw new EngineerNotFoundException(CIVIL_ENGINEER);
+
     }
+
 }
