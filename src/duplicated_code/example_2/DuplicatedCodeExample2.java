@@ -1,7 +1,5 @@
 package duplicated_code.example_2;
 
-import duplicated_code.example_1.EngineerNotFoundException;
-
 import java.util.Map;
 
 class DuplicatedCodeExample2 {

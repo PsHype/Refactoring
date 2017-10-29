@@ -1,4 +1,4 @@
-package duplicated_code.example_1;
+package duplicated_code;
 
 public class EngineerNotFoundException extends IllegalArgumentException {
     public EngineerNotFoundException(String type) {

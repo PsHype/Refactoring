@@ -1,5 +1,6 @@
 package duplicated_code.example_1;
 
+import duplicated_code.EngineerNotFoundException;
 import org.junit.Assert;
 import org.junit.Test;
 
