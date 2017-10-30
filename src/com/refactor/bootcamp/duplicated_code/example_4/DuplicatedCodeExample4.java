@@ -15,20 +15,21 @@ class DuplicatedCodeExample4 {
     }
 
     String findComputerEngineer() {
-        return getEngineerName(COMPUTER_ENGINEER);
+        for (Map.Entry<String, String> entry : engineerList.entrySet()) {
+            if (entry.getKey().equals(COMPUTER_ENGINEER)) {
+                return entry.getValue();
+            }
+        }
+        throw new EngineerNotFoundException(COMPUTER_ENGINEER);
     }
 
     String findCivilEngineer() {
-        return getEngineerName(CIVIL_ENGINEER);
-
-    }
-
-    private String getEngineerName(String civilEngineer) {
-        String name = engineerList.get(civilEngineer);
+        String name = engineerList.get(CIVIL_ENGINEER);
         if (!"".equals(name) && name != null) {
             return name;
         }
-        throw new EngineerNotFoundException(civilEngineer);
+        throw new EngineerNotFoundException(CIVIL_ENGINEER);
+
     }
 
 }
