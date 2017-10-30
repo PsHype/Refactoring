@@ -14,22 +14,21 @@ class SwitchStatementExample1 {
     }
 
     double getBillableAmount(String type) {
-        if (COMPUTER_ENGINEER.equals(type)) {
+        if ("Computer".equals(type)) {
             double base = unit * 0.8;
             double tax = base * 0.1;
             return base + tax;
-        }
-        if (CIVIL_ENGINEER.equals(type)) {
+        } else if ("Civil".equals(type)) {
             double base = unit * 0.7;
             double tax = base * 0.1;
             return base + tax;
-        }
-        if (GENERATE_ENGINEER.equals(type)) {
+        } else if ("Generate".equals(type)) {
             double base = unit * 0.6;
             double tax = base * 0.1;
             return base + tax;
+        } else {
+            throw new EngineerNotFoundException(type);
         }
-        throw new EngineerNotFoundException(type);
     }
 
 }
