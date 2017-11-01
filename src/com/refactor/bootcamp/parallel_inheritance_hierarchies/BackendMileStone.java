@@ -1,8 +1,8 @@
 package com.refactor.bootcamp.parallel_inheritance_hierarchies;
 
-public class ComputerMileStone implements MileStone {
+public class BackendMileStone implements MileStone {
     @Override
     public String target() {
-        return "computer_milestone";
+        return "backend_milestone";
     }
 }

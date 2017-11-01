@@ -1,8 +1,8 @@
 package com.refactor.bootcamp.parallel_inheritance_hierarchies;
 
-public class CivilMileStone implements MileStone {
+public class FrontendStone implements MileStone {
     @Override
     public String target() {
-        return "civil_milestone";
+        return "frontend_milestone";
     }
 }

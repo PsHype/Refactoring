@@ -1,20 +1,19 @@
 package com.refactor.bootcamp.duplicated_code.example_3;
 
-public class ComputerEngineer extends Engineer {
+class FrontendEngineer extends Engineer {
 
-    public ComputerEngineer(double unit) {
+    public FrontendEngineer(double unit) {
         super(unit);
     }
 
     @Override
     public String getType() {
-        return "Computer";
+        return "Frontend";
     }
 
-
     public double getBillableAmount() {
-        double base = unit;
-        double tax = base * 0.2;
+        double base = unit * 0.8;
+        double tax = base * 0.1;
         return base + tax;
     }
 }

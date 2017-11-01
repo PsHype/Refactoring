@@ -1,17 +1,14 @@
 package com.refactor.bootcamp.parallel_inheritance_hierarchies.refactored;
 
-public class ComputerEngineer implements Engineer {
-
+public class FrontendEngineer implements Engineer {
     @Override
     public String getType() {
-        return "computer";
+        return "Frontend";
     }
 
     @Override
     public String target() {
-        return "computer_milestone";
+        return "frontend_milestone";
     }
 
 }
-
-

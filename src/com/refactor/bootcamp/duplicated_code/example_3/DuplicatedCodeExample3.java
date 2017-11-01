@@ -2,19 +2,19 @@ package com.refactor.bootcamp.duplicated_code.example_3;
 
 class DuplicatedCodeExample3 {
 
-    private final ComputerEngineer computerEngineer;
-    private final CivilEngineer civilEngineer;
+    private final BackendEngineer backendEngineer;
+    private final FrontendEngineer frontendEngineer;
 
     DuplicatedCodeExample3(double unit) {
-        computerEngineer = new ComputerEngineer(unit);
-        civilEngineer = new CivilEngineer(unit);
+        backendEngineer = new BackendEngineer(unit);
+        frontendEngineer = new FrontendEngineer(unit);
     }
 
-    public double getComputerBillableAmount() {
-        return computerEngineer.getBillableAmount();
+    public double getBackendBillableAmount() {
+        return backendEngineer.getBillableAmount();
     }
 
-    public double getCivilBillableAmount() {
-        return civilEngineer.getBillableAmount();
+    public double getFrontendBillableAmount() {
+        return frontendEngineer.getBillableAmount();
     }
 }

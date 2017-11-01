@@ -1,19 +1,20 @@
 package com.refactor.bootcamp.duplicated_code.example_3;
 
-class CivilEngineer extends Engineer {
+public class BackendEngineer extends Engineer {
 
-    public CivilEngineer(double unit) {
+    public BackendEngineer(double unit) {
         super(unit);
     }
 
     @Override
     public String getType() {
-        return "Civil";
+        return "Backend";
     }
 
+
     public double getBillableAmount() {
-        double base = unit * 0.8;
-        double tax = base * 0.1;
+        double base = unit;
+        double tax = base * 0.2;
         return base + tax;
     }
 }

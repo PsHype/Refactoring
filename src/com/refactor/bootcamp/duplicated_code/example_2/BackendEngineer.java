@@ -4,14 +4,14 @@ import com.refactor.bootcamp.EngineerNotFoundException;
 
 import java.util.Map;
 
-public class ComputerEngineer extends Engineer {
-    public ComputerEngineer(Map<String, String> engineerList) {
+public class BackendEngineer extends Engineer {
+    public BackendEngineer(Map<String, String> engineerList) {
         super(engineerList);
     }
 
     @Override
     public String getType() {
-        return "Computer";
+        return "Backend";
     }
 
     String find() {

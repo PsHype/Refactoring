@@ -1,13 +1,13 @@
 package com.refactor.bootcamp.parallel_inheritance_hierarchies;
 
-public class CivilEngineer implements Engineer {
+public class FrontendEngineer implements Engineer {
     @Override
     public String getType() {
-        return "civil";
+        return "Frontend";
     }
 
     @Override
     public MileStone getMileStone() {
-        return new CivilMileStone();
+        return new FrontendStone();
     }
 }

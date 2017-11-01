@@ -5,20 +5,20 @@ import java.util.Map;
 class DuplicatedCodeExample2 {
 
 
-    private final ComputerEngineer computerEngineer;
-    private final CivilEngineer civilEngineer;
+    private final BackendEngineer backendEngineer;
+    private final FrontendEngineer frontendEngineer;
 
     DuplicatedCodeExample2(Map<String, String> engineerList) {
-        computerEngineer = new ComputerEngineer(engineerList);
-        civilEngineer = new CivilEngineer(engineerList);
+        backendEngineer = new BackendEngineer(engineerList);
+        frontendEngineer = new FrontendEngineer(engineerList);
     }
 
-    String findComputerEngineer() {
-        return computerEngineer.find();
+    String findBackendEngineer() {
+        return backendEngineer.find();
     }
 
-    String findCivilEngineer() {
-        return civilEngineer.find();
+    String findFrontEngineer() {
+        return frontendEngineer.find();
     }
 
 }

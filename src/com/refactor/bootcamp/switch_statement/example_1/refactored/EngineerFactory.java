@@ -3,19 +3,19 @@ package com.refactor.bootcamp.switch_statement.example_1.refactored;
 import com.refactor.bootcamp.EngineerNotFoundException;
 
 public class EngineerFactory {
-    public static final String COMPUTER_ENGINEER = "Computer";
-    public static final String CIVIL_ENGINEER = "Civil";
-    public static final String GENERATE_ENGINEER = "Generate";
+    public static final String BACKEND_ENGINEER = "Backend";
+    public static final String FRONTEND_ENGINEER = "Frontend";
+    public static final String FULLSTACK_ENGINEER = "FullStack";
 
     public static Engineer create(String type, double unit) {
-        if (COMPUTER_ENGINEER.equals(type)) {
-            return new ComputerEngineer(unit);
+        if (BACKEND_ENGINEER.equals(type)) {
+            return new BackendEngineer(unit);
         }
-        if (CIVIL_ENGINEER.equals(type)) {
-            return new CivilEngineer(unit);
+        if (FRONTEND_ENGINEER.equals(type)) {
+            return new FrontendEngineer(unit);
         }
-        if (GENERATE_ENGINEER.equals(type)) {
-            return new GenerateEngineer(unit);
+        if (FULLSTACK_ENGINEER.equals(type)) {
+            return new FullStackEngineer(unit);
         }
         throw new EngineerNotFoundException(type);
     }

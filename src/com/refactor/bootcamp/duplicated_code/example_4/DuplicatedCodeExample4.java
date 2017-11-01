@@ -6,29 +6,29 @@ import java.util.Map;
 
 class DuplicatedCodeExample4 {
 
-    private static final String COMPUTER_ENGINEER = "Computer";
-    private static final String CIVIL_ENGINEER = "Civil";
+    private static final String BACKEND_ENGINEER = "Backend";
+    private static final String FRONTEND_ENGINEER = "Frontend";
     private final Map<String, String> engineerList;
 
     DuplicatedCodeExample4(Map<String, String> engineerList) {
         this.engineerList = engineerList;
     }
 
-    String findComputerEngineer() {
+    String findBackendEngineer() {
         for (Map.Entry<String, String> entry : engineerList.entrySet()) {
-            if (entry.getKey().equals(COMPUTER_ENGINEER)) {
+            if (entry.getKey().equals(BACKEND_ENGINEER)) {
                 return entry.getValue();
             }
         }
-        throw new EngineerNotFoundException(COMPUTER_ENGINEER);
+        throw new EngineerNotFoundException(BACKEND_ENGINEER);
     }
 
-    String findCivilEngineer() {
-        String name = engineerList.get(CIVIL_ENGINEER);
+    String findFrontendEngineer() {
+        String name = engineerList.get(FRONTEND_ENGINEER);
         if (!"".equals(name) && name != null) {
             return name;
         }
-        throw new EngineerNotFoundException(CIVIL_ENGINEER);
+        throw new EngineerNotFoundException(FRONTEND_ENGINEER);
 
     }
 
