@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DuplicatedCodeExample11Test {
+public class DuplicatedCodeExample1Test {
 
     @Test
     public void should_return_computer_engineer() {
@@ -41,8 +41,8 @@ public class DuplicatedCodeExample11Test {
     private Map<String, String> buildData() {
         return new HashMap<String, String>() {
             {
-                put("Computer", "Tom");
-                put("Civil", "Jack");
+                put("Backend", "Tom");
+                put("Frontend", "Jack");
             }
         };
     }
