@@ -1,8 +1,8 @@
-package com.refactor.bootcamp.incomplete_library_class.example_2;
+package com.refactor.bootcamp.incomplete_library_class.example_3;
 
 import java.util.Date;
 
-public class InCompleteLibraryClassExample2 {
+public class InCompleteLibraryClassExample3 {
 
     public Date getBillAmountDate() {
         Date date = new Date(2016, 10, 1);
