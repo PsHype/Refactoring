@@ -9,7 +9,6 @@ class SwitchStatementExample2 {
     }
 
     double getFrontendBillableAmount(double unit) {
-
         engineer.toFrontend();
         return engineer.getBillableAmount(unit);
     }

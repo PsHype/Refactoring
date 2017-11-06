@@ -8,26 +8,26 @@ public class SwitchStatementExample1Test {
     public void should_return_computer_engineer_billable_amount() {
         SwitchStatementExample1 engineerFinance = new SwitchStatementExample1(100);
 
-        double civilEngineerBillableAmount = engineerFinance.getBillableAmount("Backend");
+        double backEndEngineerBillableAmount = engineerFinance.getBillableAmount("Backend");
 
-        Assert.assertEquals(88, civilEngineerBillableAmount, 0.0);
+        Assert.assertEquals(88, backEndEngineerBillableAmount, 0.0);
     }
 
     @Test
     public void should_return_civil_engineer_billable_amount() {
         SwitchStatementExample1 engineerFinance = new SwitchStatementExample1(100);
 
-        double civilEngineerBillableAmount = engineerFinance.getBillableAmount("Frontend");
+        double frontendEngineerBillableAmount = engineerFinance.getBillableAmount("Frontend");
 
-        Assert.assertEquals(77, civilEngineerBillableAmount, 0.0);
+        Assert.assertEquals(77, frontendEngineerBillableAmount, 0.0);
     }
 
     @Test
     public void should_return_generate_engineer_billable_amount() {
         SwitchStatementExample1 engineerFinance = new SwitchStatementExample1(100);
 
-        double civilEngineerBillableAmount = engineerFinance.getBillableAmount("FullStack");
+        double fullStackEngineerBillableAmount = engineerFinance.getBillableAmount("FullStack");
 
-        Assert.assertEquals(66, civilEngineerBillableAmount, 0.0);
+        Assert.assertEquals(66, fullStackEngineerBillableAmount, 0.0);
     }
 }
