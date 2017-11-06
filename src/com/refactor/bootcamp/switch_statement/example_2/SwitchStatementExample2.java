@@ -1,14 +1,28 @@
 package com.refactor.bootcamp.switch_statement.example_2;
 
 class SwitchStatementExample2 {
-    private String type;
 
-    public SwitchStatementExample2(String type) {
-        this.type = type;
+    private Engineer engineer;
+
+    public SwitchStatementExample2() {
+        engineer = new Engineer();
     }
 
-    double getBillableAmount(double unit) {
-        return new Engineer(type).getBillableAmount(unit);
+    double getFrontendBillableAmount(double unit) {
+
+        engineer.toFrontend();
+        return engineer.getBillableAmount(unit);
     }
+
+    double getBackEndBillAmount(double unit) {
+        engineer.toBackEnd();
+        return engineer.getBillableAmount(unit);
+    }
+
+    double getFullStackBillAmount(double unit) {
+        engineer.toFullStack();
+        return engineer.getBillableAmount(unit);
+    }
+
 
 }
