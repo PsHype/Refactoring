@@ -6,13 +6,13 @@ import java.util.Vector;
 public class Customer {
 
     private String name;
-    private Vector rentals = new Vector();
+    private Vector<Rental> rentals = new Vector<>();
 
-    public Customer(String name) {
+    Customer(String name) {
         this.name = name;
     }
 
-    public void addRental(Rental rental) {
+    void addRental(Rental rental) {
         rentals.addElement(rental);
     }
 
@@ -20,14 +20,14 @@ public class Customer {
         return name;
     }
 
-    public String statement() {
+    String statement() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
-        Enumeration rentals = this.rentals.elements();
+        Enumeration<Rental> rentals = this.rentals.elements();
         String result = "Rental Record for " + getName() + "\n";
         while (rentals.hasMoreElements()) {
             double thisAmount = 0;
-            Rental each = (Rental) rentals.nextElement();
+            Rental each = rentals.nextElement();
 
             //determine amounts for each line
             switch (each.getMovie().getPriceCode()) {
