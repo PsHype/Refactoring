@@ -1,9 +1,9 @@
 package com.refactor.bootcamp.switch_statement.example_2.refactored;
 
 public final class Engineer {
-    EngineerType engineerType;
+    StrategyEngineer engineerType;
     public Engineer() {
-        engineerType = new FrontendEngineer();
+        engineerType = new StrategyFrontendEngineer();
     }
 
     double getBillableAmount(double unit) {
@@ -11,14 +11,14 @@ public final class Engineer {
     }
 
     public void toFullStack() {
-        engineerType = new FullStackEngineer();
+        engineerType = new StrategyFullStackEngineer();
     }
 
     public void toFrontend() {
-        engineerType = new FrontendEngineer();
+        engineerType = new StrategyFrontendEngineer();
     }
 
     public void toBackEnd() {
-        engineerType = new BackEndEngineer();
+        engineerType = new StrategyBackEndEngineer();
     }
 }

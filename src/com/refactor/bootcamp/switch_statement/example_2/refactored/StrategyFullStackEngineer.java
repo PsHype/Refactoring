@@ -1,6 +1,6 @@
 package com.refactor.bootcamp.switch_statement.example_2.refactored;
 
-public class FullStackEngineer extends EngineerType {
+public class StrategyFullStackEngineer extends StrategyEngineer {
 
     @Override
     public double getBillableAmount(double unit) {

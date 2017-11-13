@@ -5,18 +5,29 @@ class SwitchStatementExample3 {
     int width;
     int length;
 
+    void setHeight(int value) {
+        height = value;
+    }
     void setValue(String name, int value) {
         if (name.equals("height")) {
-            this.height = value;
+            setHeight(value);
             return;
         }
         if (name.equals("width")) {
-            this.width = value;
+            setWidth(value);
             return;
         }
         if (name.equals("length")) {
-            this.length = value;
+            setLength(value);
         }
+    }
+
+    public void setLength(int value) {
+        this.length = value;
+    }
+
+    public void setWidth(int value) {
+        this.width = value;
     }
 
 }
