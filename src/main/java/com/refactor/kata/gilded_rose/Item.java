@@ -1,4 +1,4 @@
-package com.refactor.homework;
+package com.refactor.kata.gilded_rose;
 
 public class Item {
     public String name;

@@ -1,4 +1,4 @@
-package com.refactor.homework;
+package com.refactor.kata.gilded_rose;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,9 +12,9 @@ public class GildedRose {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
         System.out.println("OMGHAI!");
-		
+
         items = new ArrayList<Item>();
         items.add(new Item("+5 Dexterity Vest", 10, 20));
         items.add(new Item("Aged Brie", 2, 0));
