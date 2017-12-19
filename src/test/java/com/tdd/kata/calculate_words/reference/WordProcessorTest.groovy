@@ -1,6 +1,5 @@
 package com.tdd.kata.calculate_words.reference
 
-import spock.lang.Ignore
 import spock.lang.Specification
 
 class WordProcessorTest extends Specification {
@@ -27,7 +26,6 @@ class WordProcessorTest extends Specification {
     }
 
 
-    @Ignore
     def "should split right given word 'and me me'"() {
         given: 'and me me'
         def processor = new WordProcessor("and me me")
@@ -36,6 +34,9 @@ class WordProcessorTest extends Specification {
     }
 
     def "should split right given word 'and  me'"() {
-
+        given: 'and  me'
+        def processor = new WordProcessor("and  me")
+        expect:
+        processor.splitResult() == "and 1 \n me 1"
     }
 }
