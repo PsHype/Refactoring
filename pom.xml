@@ -14,9 +14,20 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spockframework.spock</groupId>
+            <artifactId>spock-core</artifactId>
+            <version>spock-1.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -36,4 +47,11 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>spockid</id>
+            <name>spock</name>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 </project>
