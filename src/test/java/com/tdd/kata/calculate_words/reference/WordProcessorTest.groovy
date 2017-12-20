@@ -4,39 +4,19 @@ import spock.lang.Specification
 
 class WordProcessorTest extends Specification {
 
-    def "should split right given null string"() {
-        given: 'null'
-        def processor = new WordProcessor(null)
-        expect: "not throw exception"
-        processor.splitResult() == ""
-    }
+    def "should split right"() {
+        given: 'various case strings'
+        def processor = new WordProcessor(input)
+        expect: 'not throw exception and output expect result'
+        processor.formatResult() == output
+        where: 'input parameter is various string'
+        input          | output
+        null           | ""
+        "and me"       | "and 1 \n me 1"
+        "and and me"   | "and 2 \n me 1"
+        "and me me"    | "me 2 \n and 1"
+        "and  me"      | "and 1 \n me 1"
+        "  and  me   " | "and 1 \n me 1"
 
-    def "should split right given word 'and me'"() {
-        given: 'and me'
-        def processor = new WordProcessor("and me")
-        expect:
-        processor.splitResult() == "and 1 \n me 1"
-    }
-
-    def "should split right given word 'and and me'"() {
-        given: 'and and me'
-        def processor = new WordProcessor("and and me")
-        expect:
-        processor.splitResult() == "and 2 \n me 1"
-    }
-
-
-    def "should split right given word 'and me me'"() {
-        given: 'and me me'
-        def processor = new WordProcessor("and me me")
-        expect:
-        processor.splitResult() == "me 2 \n and 1"
-    }
-
-    def "should split right given word 'and  me'"() {
-        given: 'and  me'
-        def processor = new WordProcessor("and  me")
-        expect:
-        processor.splitResult() == "and 1 \n me 1"
     }
 }

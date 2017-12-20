@@ -1,6 +1,8 @@
 package com.tdd.kata.calculate_words.reference;
 
 import com.google.common.base.Joiner;
+import com.google.common.base.Splitter;
+import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
@@ -18,10 +20,11 @@ public class WordProcessor {
         this.words = words;
     }
 
-    public String splitResult() {
-        if (words == null) {
+    public String formatResult() {
+        if (Strings.isNullOrEmpty(words)) {
             return "";
         }
+
         ArrayList<Word> words = groupAndSortWords();
         return Joiner.on(" \n ").join(words);
     }
@@ -34,7 +37,8 @@ public class WordProcessor {
 
     private List<Word> groupWords() {
         Map<String, Word> wordMaps = new HashMap<>();
-        String[] result = words.split("\\s+");
+        List<String> result = Splitter.onPattern("\\s+").omitEmptyStrings().splitToList(words);
+
         for (String w : result) {
             if (wordMaps.containsKey(w)) {
                 Word word = wordMaps.get(w);
