@@ -5,11 +5,11 @@ import spock.lang.Specification
 class WordProcessorTest extends Specification {
 
     def "should split right"() {
-        given: 'various case strings'
+        given: 'various strings'
         def processor = new WordProcessor(input)
-        expect: 'not throw exception and output expect result'
+        expect: 'not throw exception and is expect result'
         processor.formatResult() == output
-        where: 'input parameter is various string'
+        where:
         input          | output
         null           | ""
         "and me"       | "and 1 \n me 1"
