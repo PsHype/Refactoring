@@ -9,6 +9,7 @@ package com.refactor.bootcamp.duplicated_code;
  *   ->利用Extract Method 提炼重复代码，然后用Pull Up Method 推到超类
  *
  * 3.互为兄弟的子类，含有部分相同的表达式
+ *   ->一般常见相似的两个函数以相同的顺序执行大致的操作，但是各操作不完全相同
  *   ->利用Extract Method 提炼重复的,可能发现是可以运用From Template Method (Template Method 设计模式)
  *
  * 4.有些函数以不用的算法做相同的事
