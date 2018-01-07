@@ -9,17 +9,12 @@ public class BackendEngineer extends Engineer {
         super(engineerList);
     }
 
-    @Override
-    public String getType() {
-        return "Backend";
-    }
-
     String find() {
         for (Map.Entry<String, String> entry : engineerList.entrySet()) {
-            if (entry.getKey().equals(getType())) {
+            if (entry.getKey().equals("Backend")) {
                 return entry.getValue();
             }
         }
-        throw new EngineerNotFoundException(getType());
+        throw new EngineerNotFoundException("Backend");
     }
 }

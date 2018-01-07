@@ -8,6 +8,4 @@ public abstract class Engineer {
     protected Engineer(Map<String, String> engineerList) {
         this.engineerList = engineerList;
     }
-
-    abstract String getType();
 }
