@@ -13,7 +13,6 @@ public class Person {
         return department.getName();
     }
 
-
     public String getGroup() {
         return department.getGroup();
     }

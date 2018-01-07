@@ -15,7 +15,6 @@ class DuplicatedCodeExample1 {
     }
 
     String findComputerEngineer() {
-
         for (Map.Entry<String, String> entry : engineerList.entrySet()) {
             if (entry.getKey().equals(BACKEND_ENGINEER)) {
                 return entry.getValue();
