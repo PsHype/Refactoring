@@ -10,7 +10,7 @@ import java.util.Map;
 public class DuplicatedCodeExample4Test {
 
     @Test
-    public void should_return_computer_engineer() {
+    public void should_return_backend_engineer() {
         DuplicatedCodeExample4 engineerFinder = new DuplicatedCodeExample4(buildData());
 
         String name = engineerFinder.findBackendEngineer();
@@ -19,12 +19,12 @@ public class DuplicatedCodeExample4Test {
     }
 
     @Test(expected = EngineerNotFoundException.class)
-    public void should_throw_not_found_exception_when_computer_engineer_not_exist() {
+    public void should_throw_not_found_exception_when_backend_engineer_not_exist() {
         new DuplicatedCodeExample4(new HashMap<>()).findBackendEngineer();
     }
 
     @Test
-    public void should_return_civil_engineer() {
+    public void should_return_frontend_engineer() {
         DuplicatedCodeExample4 engineerFinder = new DuplicatedCodeExample4(buildData());
 
         String name = engineerFinder.findFrontendEngineer();
@@ -33,7 +33,7 @@ public class DuplicatedCodeExample4Test {
     }
 
     @Test(expected = EngineerNotFoundException.class)
-    public void should_throw_not_found_exception_when_civil_engineer_not_exist() {
+    public void should_throw_not_found_exception_when_frontend_engineer_not_exist() {
         new DuplicatedCodeExample4(new HashMap<>()).findFrontendEngineer();
     }
 
