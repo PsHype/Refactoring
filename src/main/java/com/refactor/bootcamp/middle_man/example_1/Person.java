@@ -9,8 +9,21 @@ public class Person {
         this.name = name;
     }
 
-    public Department getDepartment() {
-        return department;
+    public String getDepartmentName() {
+        return department.getName();
+    }
+
+
+    public String getGroup() {
+        return department.getGroup();
+    }
+
+    public String getRegion() {
+        return department.getRegion();
+    }
+
+    public String getCity() {
+        return department.getCity();
     }
 
     public String getName() {
