@@ -10,5 +10,11 @@ package com.refactor.bootcamp.long_method;
  *
  * 1.无局部变量
  *   ->利用Extract Method 提炼函数即可
+ * 2.有局部变量
+ *   ->如果发现局部变量是保存某一个表达式的运算结果，
+ *   那么用一个查询函数(Replace Temp with Query)替换使结构清晰后，在Extract Method
+ *   ->Extract Method 提炼函数
+ *   ->观察新函数如果对参数赋值了,应用Remove Assignments to Parameters
+ *
  *
  */

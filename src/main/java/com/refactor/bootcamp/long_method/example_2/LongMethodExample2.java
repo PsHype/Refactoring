@@ -11,18 +11,25 @@ public class LongMethodExample2 {
         this.frontendEngineers = frontendEngineers;
     }
 
-    public String report() {
+    public String reportOwing() {
         StringBuilder builder = new StringBuilder();
+        double totalAmount;
+        int size = frontendEngineers.size();
+        double bonus = 5.21 * size;
+        if (bonus > 10) {
+            totalAmount = bonus * 0.95;
+        } else {
+            totalAmount = bonus * 0.98;
+        }
+
         builder.append(reportBanner());
-        
-        double totalAmount = 0;
+
         for (FrontendEngineer engineer : frontendEngineers) {
             totalAmount = totalAmount + engineer.getAmount();
         }
-        builder.append("\n");
-        builder.append("totalAmount: ").append(totalAmount);
-        builder.append("\n");
-        builder.append("totalSize: ").append(frontendEngineers.size());
+        builder.append("totalAmount: ").append(totalAmount).append("\n");
+        builder.append("totalSize: ").append(size).append("\n");
+        builder.append("bonus: ").append(bonus);
         return builder.toString();
     }
 
@@ -30,7 +37,7 @@ public class LongMethodExample2 {
     private String reportBanner() {
         return "************************\n" +
             "****Engineer Report ****\n" +
-            "************************";
+            "************************\n";
     }
 
 }

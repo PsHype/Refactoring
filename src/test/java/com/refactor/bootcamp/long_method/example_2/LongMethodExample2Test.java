@@ -12,13 +12,15 @@ public class LongMethodExample2Test {
         ArrayList<FrontendEngineer> frontendEngineers = Lists.newArrayList(new FrontendEngineer(10), new FrontendEngineer(20));
 
         LongMethodExample2 example1 = new LongMethodExample2(frontendEngineers);
-        String reportResult = example1.report();
+        String reportResult = example1.reportOwing();
 
-        Assert.assertEquals("************************\n" +
+        Assert.assertEquals(
+            "************************\n" +
             "****Engineer Report ****\n" +
             "************************\n" +
-            "totalAmount: 30.0\n" +
-            "totalSize: 2", reportResult);
+            "totalAmount: 39.899\n" +
+            "totalSize: 2\n" +
+            "bonus: 10.42", reportResult);
     }
 
 }
