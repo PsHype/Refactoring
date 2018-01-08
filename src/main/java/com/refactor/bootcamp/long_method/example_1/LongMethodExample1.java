@@ -17,7 +17,9 @@ public class LongMethodExample1 {
                               "************************\n";
         builder.append(reportBanner);
 
-        builder.append("totalSize: ").append(frontendEngineers.size());
+        //totalSize
+        String totalSize = "totalSize: " + frontendEngineers.size();
+        builder.append(totalSize);
         return builder.toString();
     }
 
