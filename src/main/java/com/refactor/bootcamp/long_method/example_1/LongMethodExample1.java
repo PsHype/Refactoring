@@ -14,15 +14,9 @@ public class LongMethodExample1 {
         //banner
         String reportBanner = "************************\n" +
                               "****Engineer Report ****\n" +
-                              "************************";
+                              "************************\n";
         builder.append(reportBanner);
-        double totalAmount = 0;
-        for (FrontendEngineer engineer : frontendEngineers) {
-            totalAmount = totalAmount + engineer.getAmount();
-        }
-        builder.append("\n");
-        builder.append("totalAmount: ").append(totalAmount);
-        builder.append("\n");
+
         builder.append("totalSize: ").append(frontendEngineers.size());
         return builder.toString();
     }
