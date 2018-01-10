@@ -25,12 +25,10 @@ public class LargeClassExample2 {
     private double getPayAmount() {
         double payAmount = 0;
         if (FRONTEND.equals(engineerType)) {
-            int bonus = 100;
-            payAmount = baseAmount + bonus;
+            payAmount = 110;
         }
         if (BACKEND.equals(engineerType)) {
-            int bonus = 110;
-            payAmount = baseAmount + bonus;
+            payAmount = baseAmount;
         }
         return payAmount;
     }

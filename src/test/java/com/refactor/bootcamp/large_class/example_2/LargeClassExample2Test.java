@@ -12,7 +12,7 @@ public class LargeClassExample2Test {
         example2.payoff();
 
         PayService payService = example2.getPayService();
-        Assert.assertEquals("尊敬的Ps天花乱坠您的手机尾号2682入帐工资为:200.0", payService.getMessage());
+        Assert.assertEquals("尊敬的Ps天花乱坠您的手机尾号2682入帐工资为:110.0", payService.getMessage());
 
     }
 
@@ -23,6 +23,6 @@ public class LargeClassExample2Test {
         example2.payoff();
 
         PayService payService = example2.getPayService();
-        Assert.assertEquals("尊敬的Ps天花乱坠您的手机尾号2682入帐工资为:210.0", payService.getMessage());
+        Assert.assertEquals("尊敬的Ps天花乱坠您的手机尾号2682入帐工资为:100.0", payService.getMessage());
     }
 }
