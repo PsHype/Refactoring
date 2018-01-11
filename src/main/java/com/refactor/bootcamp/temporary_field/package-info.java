@@ -12,5 +12,5 @@ package com.refactor.bootcamp.temporary_field;
  *  提炼后的新对象将是一个函数对象。
  *
  *  1.一个类中的字段，只有在某个函数调用时才生效
- *     ->Extract Class -- Extract Method Class
+ *     ->Extract Class -- Replace Method with Method Object
  */
