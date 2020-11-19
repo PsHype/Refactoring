@@ -9,7 +9,7 @@ public class InCompleteLibraryClassExample2 {
         return nextDate(date);
     }
 
-    private static Date nextDate(Date date) {
+    private Date nextDate(Date date) {
         //foreign method ,should be on date
         return new Date(date.getYear(), date.getMonth(), date.getDate() + 1);
     }
