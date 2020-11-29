@@ -5,15 +5,6 @@ import java.util.List;
 
 public class ReplaceValueWithObjectExample {
 
-    private final Order order;
-
-    public ReplaceValueWithObjectExample(Order order) {
-        this.order = order;
-    }
-
-    public Order getOrder() {
-        return order;
-    }
 
     public int numberOrdersFor(List<Order> orders, String customer) {
         int result = 0;

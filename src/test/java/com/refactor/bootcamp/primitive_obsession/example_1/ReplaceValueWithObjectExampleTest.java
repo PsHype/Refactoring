@@ -11,7 +11,7 @@ public class ReplaceValueWithObjectExampleTest {
     @Test
     public void should_return_correct_count_for_customer() {
         ReplaceValueWithObjectExample example =
-                new ReplaceValueWithObjectExample(new Order("小帅"));
+                new ReplaceValueWithObjectExample();
 
         ArrayList<Order> orders = Lists.newArrayList(
                 new Order("小帅"),
