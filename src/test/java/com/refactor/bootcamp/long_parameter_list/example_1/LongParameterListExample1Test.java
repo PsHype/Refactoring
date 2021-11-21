@@ -1,6 +1,5 @@
-package com.refactor.bootcamp.long_parameter_list;
+package com.refactor.bootcamp.long_parameter_list.example_1;
 
-import com.refactor.bootcamp.long_parameter_list.example_1.LongParameterListExample1;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
