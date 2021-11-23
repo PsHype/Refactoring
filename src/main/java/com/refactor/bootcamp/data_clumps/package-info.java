@@ -8,6 +8,6 @@ package com.refactor.bootcamp.data_clumps;
 * 2.如果函数参数应用很多有关系的Field,那么就要考虑让这些分散的参变成参数对象
 *  ->Introduce Parameter Object 引用参数对象
 * 3.如果一个函数引用的来自同一个对象的若干个参数作为参数,可以考虑引用对象
-* 因为如果被调用的的函数改变参数，必须修改这个对这个函数的所有引用的地方
+* 因为如果被调用的的函数改变参数，必须修改这个函数的所有引用的地方
 *  ->Preserve Whole Object(保持对象完整)
 */
