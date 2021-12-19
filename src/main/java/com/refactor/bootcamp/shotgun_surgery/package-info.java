@@ -8,6 +8,6 @@ package com.refactor.bootcamp.shotgun_surgery;
  * 请尝试通过Inline Class摆脱这些现在多余的类。
  *
  * 发散式变化(Divergent Change) 是指"一个类受多种变化的影响"，霰弹式修改（Shotgun Surgery）是指"一种变化
- * 引入引发多个类相似的修改"。这两种情况下，你都会希望整理代码，使"外界变化"与"需要修改的类"趋于一一对应
+ * 引入引发多个类的修改"。这两种情况下，你都会希望整理代码，使"外界变化"与"需要修改的类"趋于一一对应
  *
  */
