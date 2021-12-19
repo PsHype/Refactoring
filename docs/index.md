@@ -1,9 +1,6 @@
 ## 欢迎来到重构训练营
 
-You can use the [editor on GitHub](https://github.com/PsHype/Refactoring/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+重构从小了说是代码的组织能力，从大了说是思考设计能力，从本人经验来看，重构给我带来了不仅仅是简单的代码组织能力，而是给我带来了对待问题的思考方式，他让我更加清楚的理解软件设计，从小的设计模式，微服务架构，DDD，以及更高层级的企业架构，它无时无刻不在发挥作用。
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
